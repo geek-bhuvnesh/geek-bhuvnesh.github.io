@@ -4,19 +4,68 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bhuvnesh Kumar | Portfolio</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 <style>
-  body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f4f4f4; color:#333;}
-  header { background:#007acc; color:white; padding:40px 20px; text-align:center;}
-  header h1 { margin:0; font-size:2.5em; }
-  header p { font-size:1.2em; margin-top:5px; }
-  nav { margin-top:20px; }
-  nav a { color:white; text-decoration:none; margin:0 15px; font-weight:bold; }
-  section { max-width:900px; margin:40px auto; padding:20px; background:white; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.1);}
-  h2 { color:#007acc; }
-  a.button { display:inline-block; padding:10px 20px; margin:5px 0; background:#007acc; color:white; border-radius:5px; text-decoration:none; }
+  /* Reset */
+  * { margin:0; padding:0; box-sizing:border-box; }
+
+  body { font-family: 'Roboto', sans-serif; background:#f0f2f5; color:#333; scroll-behavior: smooth; }
+
+  /* Header / Hero */
+  header { 
+    background: linear-gradient(135deg, #007acc, #00bfff); 
+    color:white; 
+    text-align:center; 
+    padding:80px 20px;
+  }
+  header h1 { font-size:3em; margin-bottom:10px; }
+  header p { font-size:1.3em; margin-bottom:20px; }
+  nav a { color:white; text-decoration:none; margin:0 15px; font-weight:bold; transition: 0.3s; }
+  nav a:hover { text-decoration:underline; }
+
+  /* Sections */
+  section { 
+    max-width:900px; 
+    margin:40px auto; 
+    padding:40px 20px; 
+    background:white; 
+    border-radius:15px; 
+    box-shadow:0 4px 15px rgba(0,0,0,0.1); 
+  }
+  h2 { color:#007acc; margin-bottom:20px; font-size:2em; }
+
+  /* Buttons */
+  a.button { 
+    display:inline-block; 
+    padding:12px 25px; 
+    margin:10px 5px 0 0; 
+    background:#007acc; 
+    color:white; 
+    border-radius:8px; 
+    text-decoration:none; 
+    font-weight:bold; 
+    transition:0.3s; 
+  }
+  a.button:hover { background:#005fa3; transform: translateY(-2px); }
+
+  /* Project / Blog lists */
   ul { list-style:none; padding:0; }
-  ul li { margin-bottom:10px; }
-  footer { text-align:center; padding:20px; color:#555; }
+  ul li { margin-bottom:15px; padding:15px; background:#f9f9f9; border-radius:8px; transition:0.3s; }
+  ul li:hover { background:#e6f0ff; }
+
+  /* Contact Buttons */
+  #contact a.button { margin-right:10px; }
+
+  /* Footer */
+  footer { text-align:center; padding:20px; color:#555; margin-top:40px; }
+
+  /* Responsive */
+  @media(max-width:600px) {
+    header h1 { font-size:2.2em; }
+    header p { font-size:1em; }
+    section { margin:20px; padding:30px 15px; }
+  }
 </style>
 </head>
 <body>
@@ -41,8 +90,12 @@
 <section id="projects">
   <h2>Projects</h2>
   <ul>
-    <li><a href="https://github.com/geek-bhuvnesh/ce-email-summarizer-poc" target="_blank">CE Email Summarizer POC</a> – A proof-of-concept tool that automatically reads and summarizes customer experience (CE) email threads, helping teams quickly understand key points and take actions without going through lengthy emails.</li>
-    <li><a href="https://github.com/geek-bhuvnesh/Syntactic_Processing_Assignment" target="_blank">Syntactic Processing Assignment</a> An assignment focused on analyzing and processing the structure of sentences in text, helping understand grammar, parsing, and relationships between words.</li>
+    <li>
+      <a href="https://github.com/geek-bhuvnesh/ce-email-summarizer-poc" target="_blank">CE Email Summarizer POC</a> – A proof-of-concept tool that automatically reads and summarizes customer experience (CE) email threads.
+    </li>
+    <li>
+      <a href="https://github.com/geek-bhuvnesh/Syntactic_Processing_Assignment" target="_blank">Syntactic Processing Assignment</a> – Focused on analyzing and processing sentence structures to understand grammar and relationships between words.
+    </li>
   </ul>
 </section>
 
@@ -58,7 +111,7 @@
   <p>Connect with me:</p>
   <a class="button" href="https://www.linkedin.com/in/bhuvnesh-kumar-2b85793a/" target="_blank">LinkedIn</a>
   <a class="button" href="https://github.com/geek-bhuvnesh" target="_blank">GitHub</a>
-  <a class="button" href="geek.bhuvnesh@gmail.com">Email</a>
+  <a class="button" href="mailto:geek.bhuvnesh@gmail.com">Email</a>
 </section>
 
 <footer>
